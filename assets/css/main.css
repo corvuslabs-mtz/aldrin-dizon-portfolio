@@ -860,6 +860,24 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
+.services .service-item .icon .tool-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px; /* adjust as needed */
+  height: 40px;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover animation (matches your theme transitions) */
+.services .service-item:hover .icon .tool-icon {
+  transform: translate(-50%, -50%) scale(1.1);
+  filter: brightness(1.2);
+}
+
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
